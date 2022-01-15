@@ -137,11 +137,7 @@ h1 {
 .fa-star.filled {
    color: #FFC014;
 }
-/* .item {
-    width: 250px;
-    background-color:  #FFFFFF;
-    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
-} */
+
 /* button-for-see-more */
 .button-gap {
     border: 1px solid transparent;
@@ -203,11 +199,8 @@ footer {
 
     /* Mobile Devices */
  @media only screen and (max-width:688px) {
-    .container {
-        width: 80%;
-        margin-left: 30px;
-    }
-    .blog-details {
+    .blog-details .items .wedding-photography {
+        border-width: 100%;
        justify-content: center;
        display: grid;
        grid-template-columns: repeat(1, 1fr);
@@ -224,10 +217,14 @@ footer {
 /* tablet devices */
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-    .container {
-        width: 100%
-    }
-    .players, .courses{
+
+    .blogs .items .wedding-photography{
+        width: 80%;
+        display: grid;
        grid-template-columns: repeat(2, 1fr);
+    }
+    #blog-writings {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     }
